@@ -1,19 +1,22 @@
+/* Base styles for body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #333; /* Header background color */
+  color: #fff; /* Text color in header */
   padding: 20px;
   text-align: center;
 }
 
 h2 {
   text-align: center;
+  color: #ff9800; /* Orange color for section headings */
 }
 
 .gallery {
@@ -26,6 +29,7 @@ h2 {
   width: 200px;
   margin: 10px;
   transition: transform 0.2s;
+  border-radius: 8px; /* Optional: Add rounded corners to images */
 }
 
 .gallery img:hover {
@@ -34,6 +38,9 @@ h2 {
 
 section {
   margin: 20px 0;
+  background-color: #1e1e1e; /* Darker background for sections */
+  padding: 15px; /* Add padding for better spacing */
+  border-radius: 8px; /* Optional: Add rounded corners to sections */
 }
 
 video,
@@ -41,6 +48,8 @@ audio {
   display: block;
   margin: 10px auto;
   width: 80%;
+  background-color: #333; /* Dark background for video/audio */
+  border: none; /* Remove borders for a cleaner look */
 }
 
 .hidden {
@@ -52,4 +61,12 @@ audio {
 section:not(.hidden) {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Add a warning message style */
+.warning-message {
+  color: #ff5252; /* Red color for warnings */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the warning message */
+  margin: 20px 0; /* Add margin for spacing */
 }

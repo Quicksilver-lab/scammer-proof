@@ -11,6 +11,34 @@
       <h1>Scammer Evidence</h1>
     </header>
     <main>
+      <section id="scammer-info">
+        <h2>Scammer Information</h2>
+        <p><strong>Name:</strong> Babar Khan (Sim Owner)</p>
+        <p><strong>Easypesa Owner Name:</strong> Fakhar Ali (Who is using)</p>
+        <p><strong>Carrier:</strong> Zong</p>
+        <p>
+          <strong>Address:</strong> Gali Number 8, Raj Kot, Gujranwala, Punjab
+        </p>
+        <p>
+          <strong>Phone Number:</strong>
+          <a href="tel:+923170509290">+923170509290</a>
+        </p>
+        <p><strong>Available on:</strong> WhatsApp | Telegram</p>
+        <h3>Number Formats</h3>
+        <ul>
+          <li><strong>Raw local:</strong> 03170509290</li>
+          <li><strong>Local:</strong> 0317 0509290</li>
+          <li><strong>E164:</strong> +923170509290</li>
+          <li><strong>International:</strong> 923170509290</li>
+          <li><strong>Country:</strong> PK</li>
+        </ul>
+        <p style="color: red; font-weight: bold">
+          <strong>Warning:</strong> This information is being shared with law
+          enforcement authorities. Any further fraudulent activity will be
+          reported immediately.
+        </p>
+      </section>
+
       <section id="images">
         <h2>Images</h2>
         <div class="gallery">
@@ -35,7 +63,7 @@
         <h2>Voice Messages</h2>
         <% for (let i = 1; i <= 18; i++) { %>
         <audio controls>
-          <source src="/audio/voice<%= i %>.opus" type="audio/opus" />
+          <source src="/audio/voice<%= i %>.mp3" type="audio/mp3" />
           Your browser does not support the audio tag.
         </audio>
         <% } %>
@@ -46,7 +74,6 @@
         <pre>
                 <!-- Here you can include the chat text -->
                 <%= chatText %>
-                
             </pre>
       </section>
     </main>

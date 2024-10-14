@@ -2,12 +2,17 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Set EJS as the view engine
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, "public")));
+
+// Set the view engine to EJS
 app.set("view engine", "ejs");
+
+// Set the views directory
 app.set("views", path.join(__dirname, "views"));
 
-// Sample route
 app.get("/", (req, res) => {
   const chatText = `
         10/3/24, 9:14 AM - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
@@ -206,7 +211,7 @@ app.get("/", (req, res) => {
   res.render("index", { chatText });
 });
 
-const PORT = process.env.PORT || 3000;
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
