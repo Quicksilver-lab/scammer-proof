@@ -1,35 +1,35 @@
-/* Base styles for body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 header {
-  background: #333; /* Header background color */
-  color: #fff; /* Text color in header */
+  background: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 h2 {
   text-align: center;
-  color: #ff9800; /* Orange color for section headings */
+  color: #ff9800;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .gallery img {
   width: 200px;
   margin: 10px;
   transition: transform 0.2s;
-  border-radius: 8px; /* Optional: Add rounded corners to images */
+  border-radius: 8px;
 }
 
 .gallery img:hover {
@@ -38,9 +38,9 @@ h2 {
 
 section {
   margin: 20px 0;
-  background-color: #1e1e1e; /* Darker background for sections */
-  padding: 15px; /* Add padding for better spacing */
-  border-radius: 8px; /* Optional: Add rounded corners to sections */
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 video,
@@ -48,8 +48,8 @@ audio {
   display: block;
   margin: 10px auto;
   width: 80%;
-  background-color: #333; /* Dark background for video/audio */
-  border: none; /* Remove borders for a cleaner look */
+  background-color: #333;
+  border: none;
 }
 
 .hidden {
@@ -63,10 +63,38 @@ section:not(.hidden) {
   transform: translateY(0);
 }
 
-/* Add a warning message style */
 .warning-message {
-  color: #ff5252; /* Red color for warnings */
-  font-weight: bold; /* Make the text bold */
-  text-align: center; /* Center the warning message */
-  margin: 20px 0; /* Add margin for spacing */
+  color: #ff5252;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .gallery img {
+    width: 80%;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  video,
+  audio {
+    width: 90%;
+  }
 }
