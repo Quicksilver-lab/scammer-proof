@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #ffffff; /* Changed background to white */
+  color: #000000; /* Changed text color to black */
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #f0f0f0; /* Light gray background for header */
+  color: #000; /* Black text for header */
   padding: 20px;
   text-align: center;
 }
@@ -38,7 +38,7 @@ h2 {
 
 section {
   margin: 20px 0;
-  background-color: #1e1e1e;
+  background-color: #f0f0f0; /* Changed section background to light gray */
   padding: 15px;
   border-radius: 8px;
 }
@@ -48,7 +48,7 @@ audio {
   display: block;
   margin: 10px auto;
   width: 80%;
-  background-color: #333;
+  background-color: #f0f0f0; /* Changed media background to light gray */
   border: none;
 }
 
